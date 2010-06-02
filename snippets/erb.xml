@@ -31,4 +31,12 @@
     <description>hash pair</description>
     <drop-targets>text/erb, text/html</drop-targets>
   </snippet>
+  <snippet>
+    <text><![CDATA[<% for ${1:single} in @${2:plural} %>
+	
+<% end %>]]></text>
+    <tag>fori</tag>
+    <description>for x in y</description>
+    <drop-targets>text/erb, text/html</drop-targets>
+  </snippet>
 </snippets>
