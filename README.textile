@@ -1,12 +1,18 @@
-h2. Gedit-Rails
+h1. Gedit-Rails
+
+h2. About
 
 This package provides some helpful plugins and language definitions, for developing ruby and ruby on rails applications with gedit, the default gtk text/source editor.  While gedit, in it's default state, is a very vanilla text editor, it can be extended through plugins, written either in Python or C, making it a very simple but powerful development environment.
+
+h2. Install
 
 After cloning this repo, simply run the rake task (with sudo):
 
 <pre>sudo rake setup</pre>
 
 One other thing I would suggest, you can get emacs like navigation keys by setting desktop/gnome/interface/gtk_key_theme to "Emacs" in gconf.
+
+h2. Extending
 
 If you have a particular plugin, snippet, or any other configuration tweak, you find helpful in transforming gedit into a ruby development environment, please fork this repository and contribute.
 
