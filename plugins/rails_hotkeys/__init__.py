@@ -387,9 +387,9 @@ class RailsHotkeysWindowHelper:
             self.open('fixtures', uri, name)
             return
         elif type == 'application':
-            path = os.path.join(rails_root, 'app', 'controllers', 'application.rb')
+            path = os.path.join(rails_root, 'app', 'controllers', 'application_controller.rb')
         elif type == 'layout':
-            path = os.path.join(rails_root, 'app', 'views', 'layouts', 'application.rhtml')
+            path = os.path.join(rails_root, 'app', 'views', 'layouts', 'application.html.erb')
         elif type == 'helper':
             name = self.pluralize(name)
             path = os.path.join(rails_root, 'app', 'helpers', '%s_helper.rb' % name)
