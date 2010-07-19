@@ -15,3 +15,21 @@ task :setup do
 		puts "You need to sudo this action"
 	end
 end
+
+task :remove do
+	user = ENV['USER']
+	if user == "root" then
+		system("killall gedit")
+		system("rm /usr/share/mime/packages/rails.xml")
+		system("update-mime-database /usr/share/mime")
+		system("rm /usr/share/gtksourceview-2.0/language-specs/erb.lang")
+		system("rm /usr/share/gtksourceview-2.0/language-specs/yaml.lang")
+		Dir.glob('snippets/').each { |f| system("rm ~/.gnome2/gedit/snippets/#{f}") }
+		system("rmdir ~/.gnome2/gedit/snippets")
+		Dir.glob('plugins/').each { |f| system("rm -rf ~/.gnome2/gedit/plugins/#{f}") }
+		system("rmdir ~/.gnome2/gedit/plugins")
+		system("rmdir ~/.gnome2/gedit")
+	else
+		puts "You need to sudo this action"
+	end
+end
