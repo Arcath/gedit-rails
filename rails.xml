@@ -19,6 +19,10 @@
     <glob pattern="Rakefile"/>
   </mime-type>
   <mime-type type="application/x-ruby">
+    <comment xml:lang="en">Gemfile</comment>
+    <glob pattern="Gemfile"/>
+  </mime-type>
+  <mime-type type="application/x-ruby">
     <comment xml:lang="en">Ruby script</comment>
     <!-- Some Ruby on Rails source files are incorrectly recognized as VHDL,
          so we override that. -->
